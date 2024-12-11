@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="major.MajorController">
+   <children>
+      <SplitPane dividerPositions="0.15" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ComboBox fx:id="comboboxMajor" layoutX="173.0" layoutY="16.0" onAction="#processChooseMajor" prefWidth="150.0" promptText="Choose Major" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="studentTable" prefHeight="350.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn fx:id="id" prefWidth="43.199983179569244" text="ID" />
+                      <TableColumn fx:id="firstname" prefWidth="75.1999740600586" text="FirstName" />
+                        <TableColumn fx:id="lastname" prefWidth="64.00003051757812" text="LastName" />
+                        <TableColumn fx:id="phone" prefWidth="52.800018310546875" text="Phone" />
+                        <TableColumn fx:id="email" prefWidth="92.00003051757812" text="Email" />
+                        <TableColumn fx:id="year" prefWidth="94.39996337890625" text="Year" />
+                        <TableColumn fx:id="dob" prefWidth="75.0" text="DOB" />
+                        <TableColumn fx:id="imageName" prefWidth="100.79998779296875" text="ImageName" />
+                    </columns>
+                  </TableView>
+               </children>
+          </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
